@@ -57,18 +57,22 @@ const checkout = () => {
 
     return(
         <div className="recipedetails">
-            <p>{mealData.strMeal}</p>
-            <h1><u>Recipe</u></h1>
-            <h1>{mealData.strIngredient1}</h1>
-            <h1>{mealData.strIngredient2}</h1>
-            <h1>{mealData.strIngredient3}</h1>
-            <h1>{mealData.strIngredient4}</h1>
-            <h1>{mealData.strIngredient5}</h1>
-            <h1>{mealData.strIngredient6}</h1>
-            <h1>{mealData.strIngredient7}</h1>
-            <h1>{mealData.strIngredient8}</h1>
-            <h1><u>Instructions</u></h1>
-            <h1>{mealData.strInstructions}</h1>
+            <h1><u>{mealData.strMeal}</u></h1>
+            <h1><i>Recipe</i></h1>
+            <div className="recipeingredient">
+            <p>{mealData.strIngredient1}</p>
+            <p>{mealData.strIngredient2}</p>
+            <p>{mealData.strIngredient3}</p>
+            <p>{mealData.strIngredient4}</p>
+            <p>{mealData.strIngredient5}</p>
+            <p>{mealData.strIngredient6}</p>
+            <p>{mealData.strIngredient7}</p>
+            <p>{mealData.strIngredient8}</p>
+            </div>
+            <h1><i>Instructions</i></h1>
+            <div className="recipedescriptions">
+            <p>{mealData.strInstructions}</p>
+            </div>
 
             <div>
             <Button type="primary" onClick={showDrawer}>Checkout</Button>
@@ -76,6 +80,8 @@ const checkout = () => {
         <p><i>Hey Chef !</i></p>
         <p>Please Enter the Shipping address</p>
         <form>
+        <input name="name" type="email" placeholder="Enter Your Name" onChange={(e)=>getuserdata(e)}/>
+        <input name="email" type="email" placeholder="Enter your email ID" onChange={(e)=>getuserdata(e)}/>
         <input name="address" type="text" placeholder="Address line" onChange={(e)=>getuserdata(e)}/>
         <input name="address1" type="text" placeholder="Address line"onChange={(e)=>getuserdata(e)}/>
         <input name="address2" type="text" placeholder="Address line" onChange={(e)=>getuserdata(e)}/>

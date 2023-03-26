@@ -7,7 +7,7 @@ export default function NavBar() {
     <nav>
       <div class="nav-wrapper">
        
-        <img src={require('../Images/homeIcon.jpeg')} class="brand-logo"/>
+        <img src={require('../Images/homeIcon.jpeg')} alt="logo" class="brand-logo"/>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a href="./">Home</a></li>
           <li><a href="./aboutus">About Us</a></li>

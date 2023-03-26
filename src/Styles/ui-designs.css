@@ -11,7 +11,18 @@
 }
 
 .recipedetails h1{
-    font-size: 10px;
+    font-size: 30px;
+    padding: 10px;
+    color: rgb(95, 56, 9);
+}
+
+.recipedetails p {
+    padding: 10px;
+    /* line-height: 1px; */
+}
+
+.recipeingredient{
+    line-height: 1px;
 }
 
 .brand-logo{
@@ -19,5 +30,9 @@
     width: 5vw;
     border-radius: 30px;
     margin-top: 4px;
+}
+
+.purchasepage{
+    padding: 10px;
 }
 

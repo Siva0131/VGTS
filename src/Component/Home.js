@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Card } from  "antd"
 import { useNavigate } from "react-router-dom"
 import axios from "axios";
-import { useSelector, useDispatch } from "react-redux"
-import { adduserdata } from "../Redux/Action/userdata";
+import { useSelector } from "react-redux"
+
 
 const { Meta } = Card;
 
@@ -15,9 +15,6 @@ export default function ListPage() {
 
     const data = useSelector((data)=>data)
     console.log(data)
-
-    
-
 
     useEffect(()=>{
 
@@ -39,18 +36,6 @@ export default function ListPage() {
     function onInputhandle(id){
         navigate(`/recipe/${id}`)
     }
-
-    
-
-
-
-    // function Filteroption(){
-    //     const [values,setvalues] = useState()
-
-    //     useEffect(()=>{
-    //         fetch("").then
-    //     })
-    // }
 
     const mealListMap = mealList.map((data)=>{
         return  <div className="CardOne">
